@@ -16,10 +16,10 @@ phases:
     commands:
       - echo Build initiated...
       - npm run build
-  post_build:
-    commands:
-      - echo Synchronizing public directory...
-      - aws s3 sync ./public/ s3://cdex-frontend --delete
+  # post_build:
+  #   commands:
+  #     - echo Synchronizing public directory...
+  #     - aws s3 sync ./public/ s3://cdex-frontend --delete
 artifacts:
   base-directory: public
   files:
