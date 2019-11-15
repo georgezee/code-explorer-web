@@ -9,13 +9,8 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Enter your team or user name</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Graph/>
-      <Image />
-    </div>
-    <Link to="/page-2/">Goals</Link>
+    <h1>Menu</h1>
+    <Link to="/request-transfer/">Request Transfer</Link>
   </Layout>
 )
 
